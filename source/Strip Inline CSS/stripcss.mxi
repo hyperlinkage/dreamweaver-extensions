@@ -1,0 +1,33 @@
+<macromedia-package name="Strip Inline CSS" version="1.0.0" type="command" requires-restart="true">
+
+	<author name="Timothy John Booker" />
+
+	<description>
+	 <![CDATA[
+		Moves inline CSS declarations into the header section of the document.
+		This helps to work around problems with nested layers in Netscape 4.
+	 ]]>
+	</description>
+
+	<ui-access>
+	 <![CDATA[
+		Access by choosing Commands > Strip Inline CSS from the Dreamweaver menu.
+	 ]]>
+	</ui-access>
+
+	<products>
+		<product name="Dreamweaver" version="3" primary="true" required="false" />
+	</products>
+
+	<files>
+	 	<file source="Strip Inline CSS.htm" destination="$dreamweaver/configuration/commands" />
+	 	<file source="Strip Inline CSS.js" destination="$dreamweaver/configuration/commands" />
+	</files>
+
+	<configuration-changes>
+		<menu-insert insertAfter="DWMenu_Commands_AddRemoveLayerFix"> 
+			<menuitem name="Strip Inline CSS" id="Yaffle_Commands_StripInlineCss" file="Commands/Strip Inline CSS.htm" />
+		</menu-insert>
+	</configuration-changes>
+
+</macromedia-package>

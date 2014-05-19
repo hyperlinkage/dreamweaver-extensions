@@ -1,0 +1,32 @@
+<macromedia-package name="Animate Browser Window" version="1.6.2" type="behavior" requires-restart="true">
+
+	<author name="Timothy John Booker" />
+
+	<description>
+	 <![CDATA[
+		This behavior works best when added onLoad to the body of the page.<br>
+		It also works best if the page is in a pop-up window.<br><br>
+		NOTE: If using this script inside a pop-up window, the window MUST be set as resizable.<br><br>
+		http://www.yaffle.org/projects/abw/
+	 ]]>
+	</description>
+
+	<ui-access>
+	 <![CDATA[
+		Access this behavior via the Animate Browser Window item within the behavior panel<br><br>
+	 ]]>
+	</ui-access>
+
+	<products>
+		<product name="Dreamweaver" version="3" primary="true" required="false" />
+	</products>
+
+	<files>
+	 	<file source="Animate Browser Window.htm" destination="$dreamweaver/configuration/behaviors/actions" />
+	 	<file source="Animate Browser Window.js" destination="$dreamweaver/configuration/behaviors/actions" />
+	</files>
+
+	<configuration-changes>
+	</configuration-changes>
+
+</macromedia-package>
